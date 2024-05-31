@@ -1,0 +1,214 @@
+:root {
+    --grayColor: #938c8c;
+    --main-color: #FF8500;
+}
+
+.navBar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 16px 40px rgba(112, 144, 176, 0.2);
+    z-index: 999;
+    background: white;
+}
+
+.navBarContainer {
+    padding-left: 30px;
+}
+
+.logo {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+#navBarTextContent {
+    color: var(--grayColor);
+}
+
+.linksContainer {
+    color: var(--grayColor);
+    padding-right: 10px;
+    list-style: none;
+    display: flex;
+}
+
+.linksContainer a {
+    color: inherit;
+    margin: 0px 20px;
+    text-decoration: none;
+}
+
+.navBar a {
+    position: relative;
+}
+
+.navBar a:hover::before {
+    content: "";
+    background-color: #ff8500;
+    width: 50%;
+    height: 1px;
+    border-radius: 1px;
+    position: absolute;
+    bottom: -4px;
+    /* left: 10px; */
+}
+
+#navBarLinksArrow {
+    position: absolute;
+    top: 4px;
+    right: -18px
+}
+
+#navBarLinksArrowParent {
+    position: relative;
+}
+
+#navBarToggler {
+    font-size: 30px;
+    margin-right: 5px;
+}
+
+#navBarToggler:hover,
+#navBarHiddenToggler:hover,
+#circleAroundToggler:hover {
+    cursor: pointer;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.hiddenNavBar {
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0px 16px 40px rgba(112, 144, 176, 0.2);
+    height: 100vh;
+    z-index: 9999;
+    position: fixed;
+    border-top-left-radius: 40px;
+    right: 0;
+    transform: translateX(330px);
+    transition: all .4s;
+}
+
+.linksContainerForHiddenNavBar a:hover::before {
+    content: "";
+    background-color: #ff8500;
+    width: 50%;
+    height: 2px;
+    position: absolute;
+    bottom: -3px;
+}
+
+.linksContainerForHiddenNavBar {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 23px;
+}
+
+#navBarHiddenToggler {
+    transform: rotate(90deg);
+    font-size: 30px;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.linksContainerForHiddenNavBar a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: #938c8c;
+    position: relative;
+}
+
+#emptyDiv {
+    height: 48px;
+    border-bottom: rgba(112, 144, 176, 0.2) 1px solid;
+}
+
+#navBarHiddenTogglerScroll {
+    font-size: 30px;
+    color: #fff;
+}
+
+#circleAroundToggler {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 90px;
+    left: -140px;
+    transition: all .4s;
+}
+
+#circleAroundToggler.rotate {
+    transform: rotate(90deg);
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.hiddenNavBar.translate {
+    transform: translateX(0);
+}
+
+.subLinksContainer {
+    width: fit-content;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 9px;
+    border-bottom: rgba(83, 101, 118, 0.2) 1px solid;
+    list-style: none;
+    padding: 5px;
+    top: 23px;
+}
+
+.subLinksContainer.d-none {
+    display: none;
+}
+
+.subLinksContainer li {
+    margin: 10px 0;
+}
+
+@media (max-width:1000px) {
+    .linksContainer {
+        display: none;
+    }
+
+    #navBarToggler {
+        display: block !important;
+    }
+
+    .navBar {
+        position: absolute;
+        top: 0;
+    }
+
+    .hiddenNavBar {
+        display: flex;
+    }
+}
+
+@media (min-width:1000px) {
+    .hiddenNavBar {
+        display: none;
+    }
+}
+
+@media (max-width:510px) {
+    #circleAroundToggler {
+        left: -90px;
+    }
+}

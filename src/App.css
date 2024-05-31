@@ -1,0 +1,14 @@
+:root {
+  --grayColor: #938c8c;
+  --purpleColor: #a414ff;
+  --lightGreenColor: #71aa27;
+  --blueColor: #1d5edd;
+  --main-color: #FF8500;
+  --lightBlack: #282828;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}

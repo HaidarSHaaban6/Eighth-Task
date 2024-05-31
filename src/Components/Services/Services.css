@@ -1,0 +1,134 @@
+.servicesSection {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.servicesSectionHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.servicesContainer {
+    width: 100%;
+    font-size: 18px;
+    flex-grow: 10;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.servicesContainer h3 {
+    color: black;
+    width: fit-content;
+    font-size: 26px;
+    padding-right: 20px;
+    padding-bottom: 4px;
+    margin-bottom: 20px;
+}
+
+.servicesContainer #service1 h3 {
+    border-bottom: 2px solid var(--main-color);
+}
+
+.servicesContainer #service2 h3 {
+    border-bottom: 2px solid var(--purpleColor);
+}
+
+.servicesContainer #service1,
+.servicesContainer #service2 {
+    color: var(--grayColor);
+    width: 618px;
+    background-color: #fff;
+    box-shadow: 0px 16px 40px rgba(112, 144, 176, 0.2);
+    padding: 30px 30px 42px 33px;
+    position: relative;
+}
+
+.servicesContainer #service1 {
+    border-radius: 0px 44px 44px 0px;
+}
+
+.servicesContainer #service2 {
+    border-radius: 44px 0 0 44px;
+}
+
+.lightBlackColor {
+    color: var(--lightBlack);
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.serviceOneBrandingPattern,
+.serviceTwoBrandingPattern {
+    position: absolute;
+    top: -60px;
+    left: 10px;
+}
+
+.servicesContainer .addingPosition {
+    position: relative;
+}
+
+.addingPadding {
+    padding-bottom: 19px;
+}
+
+.addingWidth-50 {
+    width: 50%;
+}
+
+.addingPositionForPhoto {
+    position: absolute;
+    bottom: 3px;
+    right: 45px;
+}
+
+@media (max-width:1280px) {
+    .servicesContainer {
+        flex-direction: column;
+    }
+
+    .addingPosition {
+        margin: 55px 0;
+    }
+
+    .servicesContainer #service1,
+    .servicesContainer #service2 {
+        border-radius: 0;
+        font-size: 16px;
+    }
+}
+
+@media (max-width:635px) {
+
+    .servicesContainer #service1,
+    .servicesContainer #service2,
+    .servicesContaine .addingPosition {
+        width: 100%;
+    }
+
+    .servicesContainer .serviceOneBrandingPattern,
+    .servicesContainer .serviceTwoBrandingPattern {
+        width: 90%;
+    }
+}
+
+@media (max-width:520px) {
+    .addingPositionForPhoto {
+        bottom: 60px;
+        right: 30px;
+        width: 40%;
+    }
+}

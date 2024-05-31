@@ -1,0 +1,176 @@
+:root {
+    --grayColor: #938c8c;
+    --main-color: #FF8500;
+}
+
+.header {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.header .content {
+    width: 100%;
+    flex-grow: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .content h1 {
+    color: var(--main-color);
+    margin-bottom: 50px;
+}
+
+.header .content .headerSecondChild {
+    width: 47%;
+}
+
+.header .content .headerFirstChild {
+    width: 688px;
+}
+
+.header .content .headerFirstChild {
+    margin-left: 30px;
+    padding-top: 80px;
+}
+
+#bold {
+    font-weight: 900;
+}
+
+.header .content .headerFirstChild p {
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 34px;
+    width: 90%;
+}
+
+.header .content .headerSecondChild .headerImage {
+    width: 325px;
+    position: absolute;
+    right: 20px;
+    bottom: 50px;
+    z-index: 10;
+}
+
+.header .content .headerSecondChild .headerPattern {
+    position: absolute;
+    right: 0;
+    bottom: 90px;
+}
+
+.header .content .headerSecondChild .headerPressStart {
+    position: absolute;
+    right: 152px;
+    bottom: 175px;
+    z-index: 100;
+}
+
+.header .content .headerSecondChild #startWord {
+    position: absolute;
+    right: 410px;
+    bottom: 260px;
+    color: var(--main-color);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.footer {
+    background-image: url(../../../src/assets/images/wave.svg);
+    height: 168px;
+}
+
+@media (max-width:1280px) {
+    .header .content .headerSecondChild .headerImage {
+        width: 26%;
+    }
+
+    .header .content .headerSecondChild .headerPattern {
+        width: 13%;
+    }
+
+    .header .content .headerSecondChild .headerPressStart {
+        width: 24%;
+    }
+}
+
+@media (max-width:1095px) {
+    .header .content .headerSecondChild #startWord {
+        font-size: 25px;
+        right: 390px;
+        font-size: 25px;
+    }
+
+    .header .content .headerFirstChild {
+        padding-top: 0;
+    }
+
+    .header .content h1 {
+        font-size: 23px;
+    }
+
+    .header .content .headerFirstChild p {
+        font-size: 18px;
+    }
+}
+
+/* Media Queries For Word " Start " :) */
+
+@media (min-width:769px) and (max-width:1024px) {
+    .header .content .headerSecondChild .headerPressStart {
+        right: 140px;
+        bottom: 140px;
+    }
+
+    .header .content .headerSecondChild #startWord {
+        right: 340px;
+        bottom: 195px;
+    }
+}
+
+@media (min-width:481px) and (max-width:768px) {
+    .header .content .headerSecondChild #startWord {
+        right: 235px;
+        bottom: 146px;
+    }
+
+    .header .content .headerSecondChild .headerPressStart {
+        right: 98px;
+        bottom: 110px;
+    }
+
+    .header .content h1 {
+        margin-bottom: 20px;
+    }
+
+    .header .content .headerFirstChild p {
+        line-height: 25px;
+    }
+}
+
+@media (min-width:320px) and (max-width:480px) {
+    .header .content .headerSecondChild #startWord {
+        color: white;
+        right: 158px;
+        bottom: 95px;
+    }
+
+    .header .content .headerSecondChild .headerPressStart {
+        right: 72px;
+        bottom: 85px;
+    }
+
+    .header .content h1 {
+        margin-bottom: 10px;
+    }
+
+    .header .content .headerFirstChild p {
+        line-height: 20px;
+    }
+}

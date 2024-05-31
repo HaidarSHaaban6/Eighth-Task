@@ -1,0 +1,96 @@
+:root {
+    --grayColor: #938c8c;
+    --purpleColor: #a414ff;
+    --lightGreenColor: #71aa27;
+    --blueColor: #1d5edd;
+    --main-color: #FF8500;
+    --lightBlack: #282828;
+}
+
+.footerSection {
+    min-height: 222px;
+    background-color: var(--lightBlack);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+    color: #fff;
+    gap: 6px;
+}
+
+.footerSection div {
+    margin-top: 40px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-flex p {
+    padding-top: 19px;
+}
+
+#headOffice {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.mb-2 {
+    margin-bottom: 20px;
+}
+
+.mb-1 {
+    margin-bottom: 10px;
+}
+
+.fs-2 {
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.keepInTouchIconContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.keepInTouchIconContainer span {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.keepInTouchIconContainer span {
+    text-decoration: none;
+    color: black;
+}
+
+#firstSon {
+    margin-right: 150px;
+}
+
+.underFooterSection {
+    display: flex;
+    align-items: center;
+    height: 61px;
+    background-color: var(--lightBlack);
+    color: #fff;
+    padding: 0 30px;
+}
+
+#addingFlexGrow {
+    flex-grow: 10;
+    border-bottom: 2px solid #fff;
+    margin-left: 30px;
+}
+
+@media (max-width:1000px) {
+    #firstSon {
+        margin-right: 0;
+    }
+
+}
